@@ -2,13 +2,13 @@
 import MainSidebar from '../components/MainSidebar.vue';
 </script>
 <template>
-  <div class="flex dark:bg-gray-800">
+  <div class="flex dark:bg-gray-800 items-start">
     <!-- main sidebar -->
-    <MainSidebar/>
+    <MainSidebar class="w-1/4"/>
     <!-- main sidebar end-->
 
-    <div class="container py-4 grid grid-cols-3 lg:grid-cols-4">
-      <div class="col-span-3">
+    <div class="container py-4">
+      <div class="">
         <nav class="mb-4">
           <ul class="flex items-center gap-2 dark:text-gray-200">
             <li>
@@ -103,8 +103,8 @@ import MainSidebar from '../components/MainSidebar.vue';
           </div>
         </div>
       </div>
-
-      <div class="pl-5 sticky top-0 hidden lg:block">
+    </div>
+    <div class="w-1/4 pl-5 sticky top-20 hidden lg:block">
         <ul class="pl-5 border-l">
           <li><a href="#" class="text-xs text-gray-600 dark:text-gray-200 hover:text-violet-800 transition">Pre-requisites</a></li>
           <li><a href="#" class="text-xs text-gray-600 dark:text-gray-200 hover:text-violet-800 transition">Minimum requirements</a></li>
@@ -125,6 +125,5 @@ import MainSidebar from '../components/MainSidebar.vue';
           </li>
         </ul>
       </div>
-    </div>
   </div>
 </template>

@@ -5,7 +5,7 @@ import BlogSidebar from '../components/BlogSidebar.vue';
 <template>
     <div class="dark:bg-gray-800">
         <div class="container flex">
-            <BlogSidebar/>
+            <BlogSidebar class="w-1/4"/>
 
             <div class="py-8">
                 <div v-for="n in 5" :key="n" class="pb-20">

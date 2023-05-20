@@ -1,13 +1,14 @@
 <script setup>
 import BlogSidebar from '../components/BlogSidebar.vue';
+import BlogViewsidebar from '../components/BlogViewsidebar.vue';
 </script>
 
 <template>
     <div class="items-start dark:bg-gray-800">
-        <div class="container grid lg:grid-cols-12">
-           <BlogSidebar/>
+        <div class="container flex items-start">
+           <BlogSidebar class="w-1/3"/>
 
-            <div class="py-8 lg:col-span-6">
+            <div class="py-8">
                 <div class="pb-8">
                     <h2 class="mb-4">
                         <RouterLink to="/blog-view" class="font-bold text-3xl text-[#6B52AE] hover:underline transition md:text-5xl">React Navigation 6.0</RouterLink>
@@ -61,31 +62,7 @@ import BlogSidebar from '../components/BlogSidebar.vue';
                 </div>
             </div>
 
-            <div class="col-span-3 pl-5 py-8 sticky top-16 hidden lg:block">
-                <ul class="pl-5 border-l">
-                <li>
-                    <a href="#" class="text-xs text-gray-600 hover:text-violet-800 transition">Highlights
-                    <ul class="pl-4">
-                        <li class="flex flex-col">
-                            <a href="#" v-for="n in 4" :key="n" class="text-xs text-gray-600 dark:text-gray-200 leading-6 hover:text-violet-800 transition">More flexible</a>
-                        </li>
-                        <li class="flex flex-col">
-                            <a href="#" v-for="n in 4" :key="n" class="text-xs text-gray-600 dark:text-gray-200 leading-6 hover:text-violet-800 transition">existing functionality</a>
-                        </li>
-                        <li class="flex flex-col">
-                            <a href="#" v-for="n in 4" :key="n" class="text-xs text-gray-600 dark:text-gray-200 leading-6 hover:text-violet-800 transition">default</a>
-                        </li>
-                    </ul>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-xs text-gray-600 hover:text-violet-800 transition">Upgrading</a>
-                </li>
-                <li>
-                    <a href="#" class="text-xs text-gray-600 hover:text-violet-800 transition">UpgSponsor us</a>
-                </li>
-                </ul>
-            </div>
+            <BlogViewsidebar/>
         </div>
     </div>
 </template>

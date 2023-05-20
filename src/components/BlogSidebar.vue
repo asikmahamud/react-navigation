@@ -3,7 +3,7 @@
 </script>
 
 <template>
-     <div class="w-80 py-8 sticky h-full max-h-full top-16 hidden lg:inline-block dark:text-gray-200">
+     <div class="pr-5 py-8 sticky h-full max-h-full top-16 hidden lg:inline-block dark:text-gray-200">
         <h4 class="text-xl mb-4 font-bold">Recent posts</h4>
         <ul>
             <li><a href="#" class="text-sm leading-9 hover:text-violet-800 transition">React Navigation 6.0</a></li>

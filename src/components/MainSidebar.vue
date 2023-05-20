@@ -7,7 +7,7 @@ const openSidebar = false;
 
 <template>
     <div class="w-[300px] sticky h-full max-h-full top-16 pt-0 hidden lg:block dark:bg-gray-800">
-        <div class="p-2 border-r">
+        <div class="p-2 border-r dark:border-gray-400">
             <ul>
                 <SingleSidebar v-for="(menu, index) in menuLists" :key="index" :menu="menu"/>
             </ul>
