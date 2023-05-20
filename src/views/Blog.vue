@@ -4,10 +4,10 @@ import BlogSidebar from '../components/BlogSidebar.vue';
 
 <template>
     <div class="dark:bg-gray-800">
-        <div class="container grid lg:grid-cols-12 items-start">
-           <BlogSidebar/>
+        <div class="container flex">
+            <BlogSidebar/>
 
-            <div class="col-span-6 py-8">
+            <div class="py-8">
                 <div v-for="n in 5" :key="n" class="pb-20">
                     <h2 class="mb-4">
                         <RouterLink to="/blog-view" class="font-bold text-3xl text-[#6B52AE] hover:underline transition md:text-5xl">React Navigation 6.0</RouterLink>
@@ -36,7 +36,7 @@ import BlogSidebar from '../components/BlogSidebar.vue';
                         </div>
                         <button class="text-base font-bold text-[#6B52AE] hover:underline transition w-24 sm:w-auto">Read More</button>
                     </div>
-                </div>s
+                </div>
 
                 <div class="flex justify-end">
                     <button class="flex items-center justify-end w-60 p-3 text-violet-800 border rounded-md hover:border-violet-800 transition dark:bg-violet-800 dark:text-gray-200 dark:border-violet-800 dark:hover:bg-transparent dark:hover:text-violet-800">

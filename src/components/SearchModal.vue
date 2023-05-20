@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div v-if="store.dropDown" class="bg-gray-700 bg-opacity-60 z-30 fixed inset-0 flex items-start justify-center">
+    <div v-if="store.dropDown" class="bg-gray-900 bg-opacity-60 z-30 fixed inset-0 flex items-start justify-center">
         <div class="w-[340px] bg-gray-100 rounded-md z-30 mt-40 sm:w-[560px] overflow-hidden">
            <div class="p-3">
                 <div class="relative">
