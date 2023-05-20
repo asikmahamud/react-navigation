@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div class="dark:bg-gray-800 flex">
-        <div class="container py-10 md:pt-20 h-ful">
+    <div class="dark:bg-gray-800 flex h-[75vh]">
+        <div class="container py-10 md:pt-28 h-ful">
             <h2 class="text-2xl font-bold mb-4 dark:text-gray-200">Need help?</h2>
             <p class="leading-8 dark:text-gray-200">If you've encountered a bug with React Navigation, please 
                 <a href="#" class="text-violet-800 hover:underline transition">post an issue</a> 
